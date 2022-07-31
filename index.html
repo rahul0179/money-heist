@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="flex justify-center pt-16 ">
+            <p class=" font-bold text-6xl text-cyan-600 text-center">Money <span
+                    class="font-bold text-7xl text-rose-700 text-center">Heist</span></p>
+
+        </div>
+    </section>
+
+    <section>
+        <main class="grid md:grid-cols-1  xl:grid-cols-2 gap-2 pt-12">
+            <div class="">
+
+                <img class="h-full w-full" src="img/rr.jpg" alt="">
+
+            </div>
+
+            <div class=" h-auto bg-pink-400">
+                <p class="font-bold text-2xl text-blue-700 text-center my-4">Income</p>
+                <div class="flex justify-center">
+                    <p class="font-bold">Income : </p>
+                    <input class="border-1 border-sky-500  bg-gray-300 w-35 ml-2" type="text" name="" id="income">
+                </div>
+
+                <p class="font-bold text-2xl text-blue-700 text-center my-4">Expenses</p>
+
+                <div>
+                    <ul class="flex flex-col ">
+                        <li class="flex justify-center  mt-2 ">
+                            <p class="font-bold">Food : </p>
+                            <input class="border-1 border-sky-500  bg-gray-300 w-35 ml-2" type="text" name="" id="food">
+                        </li>
+                        <li class="flex justify-center  mt-2 ">
+                            <p class="font-bold">Rent : </p>
+                            <input class="border-1 border-sky-500  bg-gray-300 w-35 ml-2" type="text" name="" id="rent">
+
+                        </li>
+                        <li class="flex justify-center  mt-2 ">
+                            <p class="font-bold">Other : </p>
+                            <input class="border-1 border-sky-500  bg-gray-300 w-35 ml-2" type="text" name=""
+                                id="other">
+                        </li>
+                    </ul>
+
+                    <div class="flex justify-center mt-2">
+                        <button id="calculate" class=" text-white-600 bg-blue-400 h-8 w-24  px-2 rounde-2 rounded-md "
+                            type="">calculate</button>
+                    </div>
+                </div>
+
+                <div class="flex  justify-center">
+                    <div class="flex  justify-center">
+                        <p class="font-bold">Totaal Expenses : </p>
+                        <p class="" id="expense">0</p>
+                    </div>
+                </div>
+                <div class="flex  justify-center">
+                    <div class="flex  justify-center">
+                        <p class="font-bold">Blance :</p>
+                        <p id="blance">0</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="flex justify-center   my-4">
+                    <p class="font-bold">Save</p>
+                    <input class="border-1 border-sky-500  bg-gray-300 w-16 ml-2" type="text" name="" id="saving">
+                    <p class="mx-3">%</p>
+                    <button id="savingBtn" class=" text-white-600 bg-blue-400 h-6 w-16 rounded-md px-2 ">Save</button>
+                </div>
+                <div class="flex  justify-center mt-2">
+                    <div class="flex  justify-center">
+                        <p class="font-bold">Saving Amount : </p>
+                        <p id="sAmount"></p>
+                    </div>
+                </div>
+                <div class="flex  justify-center mt-2">
+                    <div class="flex  justify-center">
+                        <p class="font-bold">Remaining :</p>
+                        <p id="rBlance"></p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </main>
+    </section>
+
+
+
+
+    <script src=" js/myBank.js">
+    </script>
+</body>
+
+</html>
