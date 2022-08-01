@@ -25,13 +25,14 @@ function totalExpense() {
         console.log(totalBlance)
 
         blanced.innerText = totalBlance;
-        return totalBlance;
 
 
-        /* income.value = '';
+
+
         food.value = "";
         rent.value = '';
-        other.value = ''; */
+        other.value = '';
+        return totalBlance;
     }
     else {
         food.value = "";
