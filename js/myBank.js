@@ -45,14 +45,16 @@ function totalExpense() {
 }
 
 
-function saving(id, bal) {
+function saving(id) {
     const savingPersentage = document.getElementById("saving");
     const savingInput = parseFloat(savingPersentage.value)
     const income = document.getElementById(id)
     const incomeInput = parseFloat(income.value);
-    let saving = incomeInput / savingInput
+    let saving = (incomeInput * savingInput) / 100;
     let savingAmount = document.getElementById("sAmount");
     savingAmount.innerText = saving;
+    let balance = document.getElementById('blance')
+    let bal = parseFloat(balance.innerText);
     const rBlance = bal - saving;
     let remainingBlance = document.getElementById('rBlance');
     remainingBlance.innerText = rBlance;
